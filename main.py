@@ -25,6 +25,7 @@ class calculator(Resource):
         tempsCharge = (nbCharge)*chargement
         tempsParcours = int(((distance/vitesse)/60)+(distance/vitesse)%60)
         tempsTotal = tempsCharge +tempsParcours
+        print("Requete OK")
         return {"nombreDeCharge":nbCharge,"tempsDeCharge":tempsCharge,"DureeParcours":tempsParcours,"DureeTotal":tempsTotal}
 
 
