@@ -26,7 +26,7 @@ class calculator(Resource):
         tempsParcours = int(((distance/vitesse)/60)+(distance/vitesse)%60)
         tempsTotal = tempsCharge +tempsParcours
         return {"nombreDeCharge":nbCharge,"tempsDeCharge":tempsCharge,"DureeParcours":tempsParcours,"DureeTotal":tempsTotal}
-        #return "autonomie: "+str(autonomie)+" km, temps d'une charge: "+ str(chargement)+" heures, distance a parcourir: "+str(distance)+" km, vitesse: "+str(vitesse)+" km/h, nombre de charge: "+str(nbCharge)+", temps de charge: "+str(tempsCharge)+" heures, temps parcours: "+str(tempsParcours)+" heures, temps total: "+str(tempsTotal)
+
 
 
 
