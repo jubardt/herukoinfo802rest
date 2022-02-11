@@ -4,10 +4,6 @@ from flask_restful import reqparse, Api, Resource
 app = Flask(__name__)
 api = Api(app)
 
-
-
-
-
 class calculator(Resource):
     def get(self):
         parser = reqparse.RequestParser()
