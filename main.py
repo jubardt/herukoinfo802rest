@@ -17,7 +17,7 @@ class calculator(Resource):
         chargement = param.get('chargement') #valeur en min
         distance = param.get('distance')*1000 #valeur en m
         vitesse = param.get('vitesse')/3.6 #valeur en m/s
-        if(autonomie>distance):
+        if(autonomie>=distance):
             nbCharge = 0
         elif(((distance/autonomie) % 1) == 0):
             nbCharge = int(distance/autonomie)
